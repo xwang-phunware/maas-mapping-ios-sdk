@@ -72,6 +72,7 @@ class TurnByTurnViewController: UIViewController {
     func configureTurnByTurnInstructionsView() {
         let layout = UICollectionViewFlowLayout()
         layout.scrollDirection = .horizontal
+        layout.minimumLineSpacing = 0
         instructionsCollectionView = UICollectionView(frame: .zero, collectionViewLayout: layout)
         instructionsCollectionView.showsHorizontalScrollIndicator = true
         instructionsCollectionView.isPagingEnabled = true
