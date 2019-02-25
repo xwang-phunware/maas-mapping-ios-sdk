@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		179CA613BC173C9078F0724C /* Pods_MapScenarios.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A64B34F873B2034B538F5112 /* Pods_MapScenarios.framework */; };
 		9D6C1DCD220E0A4200C046DF /* DirectionImages.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9D6C1DCC220E0A4100C046DF /* DirectionImages.xcassets */; };
+		9D6C1DCF221F499500C046DF /* WalkTimeView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9D6C1DCE221F499500C046DF /* WalkTimeView.xib */; };
+		9D6C1DD1221F49CB00C046DF /* WalkTimeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D6C1DD0221F49CB00C046DF /* WalkTimeView.swift */; };
 		9D93FCE22208A2F000A2EB02 /* TurnByTurnViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D93FCE12208A2F000A2EB02 /* TurnByTurnViewController.swift */; };
 		9DE2FAAA2204CE3800EE5DF5 /* WalkTimeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DE2FAA92204CE3800EE5DF5 /* WalkTimeViewController.swift */; };
 		9DE2FAB72204F5C500EE5DF5 /* TurnByTurnInstructionCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DE2FAB32204F5C500EE5DF5 /* TurnByTurnInstructionCollectionViewCell.swift */; };
@@ -31,6 +33,8 @@
 		728C41C18DA051CD358ABD7B /* Pods-MapScenarios.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MapScenarios.release.xcconfig"; path = "Pods/Target Support Files/Pods-MapScenarios/Pods-MapScenarios.release.xcconfig"; sourceTree = "<group>"; };
 		9CB47B3A056D6CD629EBD3CA /* Pods-MapScenarios.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MapScenarios.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MapScenarios/Pods-MapScenarios.debug.xcconfig"; sourceTree = "<group>"; };
 		9D6C1DCC220E0A4100C046DF /* DirectionImages.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = DirectionImages.xcassets; path = MapScenarios/Assets.xcassets/DirectionImages.xcassets; sourceTree = SOURCE_ROOT; };
+		9D6C1DCE221F499500C046DF /* WalkTimeView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = WalkTimeView.xib; sourceTree = "<group>"; };
+		9D6C1DD0221F49CB00C046DF /* WalkTimeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WalkTimeView.swift; sourceTree = "<group>"; };
 		9D93FCE12208A2F000A2EB02 /* TurnByTurnViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TurnByTurnViewController.swift; sourceTree = "<group>"; };
 		9DE2FAA92204CE3800EE5DF5 /* WalkTimeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WalkTimeViewController.swift; sourceTree = "<group>"; };
 		9DE2FAB32204F5C500EE5DF5 /* TurnByTurnInstructionCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TurnByTurnInstructionCollectionViewCell.swift; sourceTree = "<group>"; };
@@ -93,19 +97,22 @@
 			isa = PBXGroup;
 			children = (
 				9D6C1DCB220E09EB00C046DF /* Icons */,
-				9DE2FAB22204F5C500EE5DF5 /* Cells */,
+				9DE2FAB22204F5C500EE5DF5 /* Views */,
 				9D93FCE12208A2F000A2EB02 /* TurnByTurnViewController.swift */,
+				9DE2FAA92204CE3800EE5DF5 /* WalkTimeViewController.swift */,
 			);
 			path = TurnByTurn;
 			sourceTree = "<group>";
 		};
-		9DE2FAB22204F5C500EE5DF5 /* Cells */ = {
+		9DE2FAB22204F5C500EE5DF5 /* Views */ = {
 			isa = PBXGroup;
 			children = (
 				9DE2FAB32204F5C500EE5DF5 /* TurnByTurnInstructionCollectionViewCell.swift */,
 				9DE2FAB52204F5C500EE5DF5 /* TurnByTurnInstructionCollectionViewCell.xib */,
+				9D6C1DCE221F499500C046DF /* WalkTimeView.xib */,
+				9D6C1DD0221F49CB00C046DF /* WalkTimeView.swift */,
 			);
-			path = Cells;
+			path = Views;
 			sourceTree = "<group>";
 		};
 		E3C3798F204D90AA00905731 = {
@@ -151,7 +158,6 @@
 				E36BB69120571B57003640CA /* LocationSharingViewController.swift */,
 				E3C771C92050555D00780D0F /* RoutingViewController.swift */,
 				E3C771CE2050846E00780D0F /* SearchPOIViewController.swift */,
-				9DE2FAA92204CE3800EE5DF5 /* WalkTimeViewController.swift */,
 			);
 			path = Scenarios;
 			sourceTree = "<group>";
@@ -218,6 +224,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9D6C1DCF221F499500C046DF /* WalkTimeView.xib in Resources */,
 				E3C379A6204D90AA00905731 /* LaunchScreen.storyboard in Resources */,
 				E3C379A3204D90AA00905731 /* Assets.xcassets in Resources */,
 				E3C379A1204D90AA00905731 /* Main.storyboard in Resources */,
@@ -286,6 +293,7 @@
 			files = (
 				9DE2FAAA2204CE3800EE5DF5 /* WalkTimeViewController.swift in Sources */,
 				E3C76E7C204DEE2900780D0F /* LoadBuildingViewController.swift in Sources */,
+				9D6C1DD1221F49CB00C046DF /* WalkTimeView.swift in Sources */,
 				9D93FCE22208A2F000A2EB02 /* TurnByTurnViewController.swift in Sources */,
 				9DE2FAB72204F5C500EE5DF5 /* TurnByTurnInstructionCollectionViewCell.swift in Sources */,
 				E3C771CA2050555D00780D0F /* RoutingViewController.swift in Sources */,
